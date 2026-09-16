@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#07162d" />
+  <meta name="description" content="FreunDo investor overview — real-time intelligence at the edge." />
+  <title>FreunDo — Investor Overview</title>
+  <link rel="icon" type="image/png" href="assets/freundo-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260914-fullportrait" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="FreunDo home">
+      <img class="brand-logo" src="assets/freundo-logo-horizontal.png" alt="FreunDo">
+    </a>
+    <nav class="desktop-nav" aria-label="Primary">
+      <a href="#thesis">Thesis</a><a href="#technology">Technology</a><a href="#market">Market</a><a href="#calculator">Calculator</a><a href="#strategy">Strategy</a><a href="#team">Team</a>
+    </nav>
+    <div class="top-actions">
+      <a class="btn ghost" href="assets/FreunDo_Pitch_Deck.pptx" download>Download deck</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <aside class="chapter-rail" aria-label="Chapter navigation">
+    <a href="#top" class="chapter-dot active"><span>01</span><b>Vision</b></a>
+    <a href="#thesis" class="chapter-dot"><span>02</span><b>Thesis</b></a>
+    <a href="#technology" class="chapter-dot"><span>03</span><b>Technology</b></a>
+    <a href="#market" class="chapter-dot"><span>04</span><b>Market</b></a>
+    <a href="#calculator" class="chapter-dot"><span>05</span><b>Adoption</b></a>
+    <a href="#strategy" class="chapter-dot"><span>06</span><b>Strategy</b></a>
+    <a href="#team" class="chapter-dot"><span>07</span><b>Team</b></a>
+    <a href="#deck" class="chapter-dot"><span>08</span><b>Deck</b></a>
+  </aside>
+
+  <div class="mobile-drawer" id="drawer" aria-hidden="true">
+    <a href="#thesis">Investment thesis</a><a href="#technology">Technology</a><a href="#market">Market</a><a href="#calculator">Market Adoption calculator</a><a href="#strategy">Strategy & funding</a><a href="#team">Team</a><a href="#deck">Full deck</a>
+  </div>
+
+  <main>
+    <section class="hero section" id="top" data-chapter="Vision">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse"></span> Investor overview · Edinburgh, UK</div>
+          <h1>Real-time intelligence,<br><em>right at the edge.</em></h1>
+          <p class="hero-lead">FreunDo is building a lightweight AI platform for low-latency, private, on-device speech intelligence — starting with hearing enhancement and expanding toward a unified acoustic model.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#calculator">Explore market adoption</a>
+            <a class="btn ghost" href="#deck">View full deck</a>
+          </div>
+          <div class="metric-strip">
+            <div><strong>&lt;10 ms</strong><span>target end-to-end latency</span></div>
+            <div><strong>28.3</strong><span>MMAC/s compute</span></div>
+            <div><strong>23.7k</strong><span>deployed parameters</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal delay-1">
+          <div class="orb orb-a"></div><div class="orb orb-b"></div>
+          <div class="edge-card">
+            <div class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <p>NOISY INPUT</p>
+            <div class="flow-line"><span></span></div>
+            <h3>RFD</h3>
+            <small>Lightweight enhancement</small>
+            <div class="flow-line"><span></span></div>
+            <p>ENHANCED SPEECH</p>
+          </div>
+          <div class="floating-chip chip-1"><span>PRIVATE</span>On-device AI</div>
+          <div class="floating-chip chip-2"><span>REAL TIME</span>Causal streaming</div>
+          <div class="floating-chip chip-3"><span>SCALABLE</span>FPGA → SoC → ASIC / NPU</div>
+        </div>
+      </div>
+      <div class="scroll-cue">Scroll to explore <span>↓</span></div>
+    </section>
+
+    <section class="section" id="thesis" data-chapter="Thesis">
+      <div class="section-head reveal">
+        <div><span class="kicker">02 — Investment thesis</span><h2>The gap is not “more AI”.<br>It is <em>deployable intelligence.</em></h2></div>
+        <p>Hearing devices operate under brutal constraints: tiny batteries, constrained compute, noisy real-world scenes and strict latency requirements. FreunDo is designed around those constraints from the start.</p>
+      </div>
+      <div class="thesis-grid">
+        <article class="glass reveal"><span class="num">01</span><h3>Speech in noise still breaks down</h3><p>Complex environments mask important speech and make listening uncomfortable.</p></article>
+        <article class="glass reveal delay-1"><span class="num">02</span><h3>Cloud is the wrong dependency</h3><p>Latency, privacy and connectivity make local processing strategically important.</p></article>
+        <article class="glass reveal delay-2"><span class="num">03</span><h3>General edge AI is not hearing-specific</h3><p>The market needs low-power, licensable intelligence designed for hearing and assistive audio.</p></article>
+      </div>
+      <div class="market-need reveal"><span>Market need</span><strong>Low-latency · low-power · adaptive · on-device speech intelligence</strong></div>
+    </section>
+
+    <section class="section dark-section" id="technology" data-chapter="Technology">
+      <div class="section-head reveal">
+        <div><span class="kicker">03 — Technology</span><h2>One architecture.<br><em>Multiple hardware paths.</em></h2></div>
+        <p>FreunDo combines a lightweight RFD speech model with a hardware-level deployment strategy: FPGA validation first, then partner SoC integration and eventual ASIC/NPU migration.</p>
+      </div>
+      <div class="tech-layout">
+        <div class="tech-stack reveal">
+          <button class="tech-tab active" data-panel="rfd"><span>01</span><b>RFD Model</b><small>Real-time speech enhancement</small></button>
+          <button class="tech-tab" data-panel="codesign"><span>02</span><b>Model ↔ Hardware Co-design</b><small>Map neural networks into efficient modules</small></button>
+          <button class="tech-tab" data-panel="platform"><span>03</span><b>Unified Acoustic Platform</b><small>Denoising → understanding → adaptation</small></button>
+        </div>
+        <div class="tech-panel reveal delay-1">
+          <div class="panel active" id="rfd">
+            <span class="panel-tag">CURRENT CORE</span><h3>RFD lightweight denoising model</h3><p>Streaming, no look-ahead architecture built around RepConv, causal attention and a frequency-heterogeneous output head.</p>
+            <div class="mini-metrics"><div><strong>2.30</strong><span>PESQ</span></div><div><strong>0.925</strong><span>STOI</span></div><div><strong>15.17 dB</strong><span>SI-SNR</span></div></div>
+          </div>
+          <div class="panel" id="codesign">
+            <span class="panel-tag">DEPLOYMENT MOAT</span><h3>Hardware-aware by design</h3><p>The roadmap packages model, RTL workflow, benchmark tools and an evaluation kit to shorten partner integration cycles.</p>
+            <div class="mini-metrics"><div><strong>FPGA</strong><span>validation</span></div><div><strong>SoC</strong><span>partner integration</span></div><div><strong>ASIC / NPU</strong><span>scale path</span></div></div>
+          </div>
+          <div class="panel" id="platform">
+            <span class="panel-tag">LONG-TERM PLATFORM</span><h3>From translation feature to hearing agent</h3><p>A reusable acoustic intelligence layer for denoising, scene understanding, translation, alerts and user adaptation — deployable across hearing aids, earbuds, phones, wearables and dedicated edge silicon.</p>
+            <div class="mini-metrics"><div><strong>Hear</strong><span>enhance</span></div><div><strong>Understand</strong><span>context</span></div><div><strong>Act</strong><span>adapt</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="platform-flow reveal">
+        <span>Noise</span><i>→</i><span>RFD enhancement</span><i>→</i><span>Translation & understanding</span><i>→</i><span>Hearing agent</span>
+      </div>
+    </section>
+
+    <section class="section" id="market" data-chapter="Market">
+      <div class="section-head reveal">
+        <div><span class="kicker">04 — Market</span><h2>A concentrated market.<br><em>A neutral platform opportunity.</em></h2></div>
+        <p>The deck frames a gap between proprietary hearing-aid stacks and broad edge-AI vendors: FreunDo’s intended position is a neutral, licensable, sub-10 ms, low-power, on-device layer for OEM / ODM integration.</p>
+      </div>
+      <div class="market-layout">
+        <div class="donut-card reveal">
+          <div class="donut" aria-label="Hearing aid market concentration"><div class="donut-center"><strong>$9.7B</strong><span>2026 hearing-aid market*</span></div></div>
+          <p class="source-note">*Deck assumption. Market concentration shown in the source pitch deck.</p>
+        </div>
+        <div class="market-cards reveal delay-1">
+          <div class="stat-card"><span>Reachable share</span><strong>0.5–1.0%</strong><small>initial obtainable share assumption</small></div>
+          <div class="stat-card"><span>Implied opportunity</span><strong>$49–97M</strong><small>based on the deck’s 2026 market size</small></div>
+          <div class="gap-card"><h3>The gap FreunDo aims to fill</h3><div class="pill-grid"><span>Neutral & licensable</span><span>Sub-10 ms focus</span><span>Low-power AI</span><span>Private, on-device</span><span>OEM / ODM integration</span><span>Hearing-specific</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section calculator-section" id="calculator" data-chapter="Adoption">
+      <div class="section-head reveal">
+        <div><span class="kicker">05 — Interactive model</span><h2>Market Adoption<br><em>Calculator.</em></h2></div>
+        <p>Stress-test a simple top-down adoption scenario using the market assumptions in the deck. This is an illustrative model, not a forecast.</p>
+      </div>
+      <div class="calculator reveal">
+        <div class="controls">
+          <label><div><span>Addressable market</span><output id="marketOut">$9.7B</output></div><input id="marketSize" type="range" min="2" max="20" step="0.1" value="9.7"></label>
+          <label><div><span>Reachable share</span><output id="shareOut">0.75%</output></div><input id="share" type="range" min="0.1" max="3" step="0.05" value="0.75"></label>
+          <label><div><span>Partner capture / monetisation</span><output id="captureOut">35%</output></div><input id="capture" type="range" min="10" max="80" step="5" value="35"></label>
+          <label><div><span>Royalty-equivalent margin</span><output id="marginOut">18%</output></div><input id="margin" type="range" min="5" max="50" step="1" value="18"></label>
+        </div>
+        <div class="calc-results">
+          <div class="result-main"><span>Reachable market value</span><strong id="reachable">$72.8M</strong><small>Market × reachable share</small></div>
+          <div class="result-grid"><div><span>Monetised value</span><strong id="monetised">$25.5M</strong></div><div><span>Illustrative annual revenue</span><strong id="revenue">$4.6M</strong></div></div>
+          <div class="scenario-bar"><div id="barFill"></div></div>
+          <p id="scenarioText">At 0.75% share, 35% partner capture and 18% royalty-equivalent margin, the illustrative annual revenue is $4.6M.</p>
+        </div>
+      </div>
+      <div class="calc-note reveal">Model logic: <b>Market size × reachable share × partner capture × royalty-equivalent margin</b>. Adjust assumptions to test sensitivity. Values are illustrative and should not be interpreted as audited projections.</div>
+    </section>
+
+    <section class="section" id="strategy" data-chapter="Strategy">
+      <div class="section-head reveal">
+        <div><span class="kicker">06 — Strategy & funding</span><h2>Validate first.<br><em>License, then expand.</em></h2></div>
+        <p>A staged model links technical validation to commercial proof: evaluation kits → paid PoCs/NRE → licensing and royalties → broader platform and product opportunities.</p>
+      </div>
+      <div class="timeline reveal">
+        <article><span>0–6 mo</span><h3>Validate core technology</h3><p>RFD benchmark, listening tests, FPGA simulation.</p><b>&lt;10 ms target</b></article>
+        <article><span>6–12 mo</span><h3>Evaluation kit & SDK</h3><p>Partner-ready build, benchmark report and technical meetings.</p><b>30–50 leads</b></article>
+        <article><span>9–18 mo</span><h3>PoC & NRE</h3><p>Paid pilots, partner adaptation and integration.</p><b>PoC £20k–£50k</b></article>
+        <article><span>Year 2–3+</span><h3>Licensing & scale</h3><p>Annual platform fee, per-device royalty, multi-market expansion.</p><b>£1–£3 / device</b></article>
+      </div>
+      <div class="funding-grid">
+        <div class="funding-card reveal"><span>Founder self-funding</span><strong>£50,000</strong><p>Secured to support company setup, prototype development and FPGA/audio testing.</p></div>
+        <div class="funding-card reveal delay-1"><span>Seed target</span><strong>£300,000</strong><p>After prototype validation and first customer traction, alongside founder investment.</p></div>
+        <div class="funding-card reveal delay-2"><span>Series A target</span><strong>£500,000</strong><p>To scale sales, productisation, market expansion and the ASIC/NPU roadmap.</p></div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="team" data-chapter="Team">
+      <div class="section-head reveal">
+        <div><span class="kicker">07 — Team</span><h2>Multidisciplinary by design.</h2></div>
+        <p>Engineering, AI model design and financial strategy are represented across the founding team, supported by technical and research advisors.</p>
+      </div>
+      <div class="team-grid">
+        <article class="team-card reveal"><div class="team-photo-wrap"><img class="team-photo" src="assets/team/zechun-deng.png" alt="Zechun Deng, CEO and Founder of FreunDo" loading="lazy"></div><span>CEO · Founder</span><h3>Zechun Deng</h3><p>FPGA / SoC design · Hardware deployment · System integration</p><blockquote>“Turning AI into real life impact.”</blockquote></article>
+        <article class="team-card reveal delay-1"><div class="team-photo-wrap"><img class="team-photo" src="assets/team/xin-feng.png" alt="Dr Xin Feng, CTO and Co-Founder of FreunDo" loading="lazy"></div><span>CTO · Co-Founder</span><h3>Dr Xin Feng</h3><p>AI model design · Audio signal processing · Machine learning</p><blockquote>“From algorithms to real-time AI model.”</blockquote></article>
+        <article class="team-card reveal delay-2"><div class="team-photo-wrap"><img class="team-photo" src="assets/team/yi-tian.png" alt="Yi Tian, CFO and Co-Founder of FreunDo" loading="lazy"></div><span>CFO · Co-Founder</span><h3>Yi Tian</h3><p>Financial strategy · Capital raising · Operations</p><blockquote>“Building a sustainable and scalable business.”</blockquote></article>
+      </div>
+      <div class="advisor-strip reveal"><span>Advisory support</span><b>Junhao Song — AI Advisor</b><b>Usman Anwar — Engineering & Research Advisor</b></div>
+    </section>
+
+    <section class="section" id="deck" data-chapter="Deck">
+      <div class="section-head reveal">
+        <div><span class="kicker">08 — Source deck</span><h2>The full investor deck,<br><em>inside the site.</em></h2></div>
+        <div><p>Browse all 20 slides without leaving the page, or download the original PowerPoint.</p><a class="btn primary" href="assets/FreunDo_Pitch_Deck.pptx" download>Download .pptx</a></div>
+      </div>
+      <div class="deck-viewer reveal">
+        <button class="deck-arrow prev" id="prevSlide" aria-label="Previous slide">←</button>
+        <div class="deck-stage"><img id="deckImage" src="assets/slides/slide-01.webp" alt="FreunDo pitch deck slide 1"><div class="deck-caption"><span id="deckCount">01 / 20</span><b id="deckTitle">Vision</b></div></div>
+        <button class="deck-arrow next" id="nextSlide" aria-label="Next slide">→</button>
+      </div>
+      <div class="deck-thumbs" id="deckThumbs" aria-label="Slide thumbnails"></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-box reveal">
+        <img class="contact-logo" src="assets/freundo-logo-horizontal.png" alt="FreunDo logo" loading="lazy">
+        <span class="kicker">Contact</span><h2>Build a quieter, smarter and more inclusive world with us.</h2>
+        <div class="contact-links"><a href="mailto:contact@freundo.co.uk">contact@freundo.co.uk</a><a href="https://freundo.co.uk" target="_blank" rel="noopener">freundo.co.uk ↗</a></div>
+        <p>FreunDo Ltd · 5 South Charlotte Street, Edinburgh, Scotland, UK, EH2 4AN</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 FreunDo Ltd</span><span>Investor website · built from the supplied pitch deck</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
